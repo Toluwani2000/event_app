@@ -1,4 +1,4 @@
-import { event1, people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { event1, event2, people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -26,6 +26,33 @@ export const event = [
     title: 'The Jewellery Workshop',
     date: 'Sat, Feb 11 . 12:00pm',
     price: 'from $15.00',
+    publisher: 'Flytime Ent',
+
+  },
+  {
+    id: 'event-2',
+    img: event1,
+    title: 'The  Workshop',
+    date: 'Sat, Feb 21 . 12:00pm',
+    price: 'from $10.00',
+    publisher: 'Flytime Ent',
+
+  },
+  {
+    id: 'event-3',
+    img: event2,
+    title: 'LAGOS FREEDOM FEST 2024',
+    date: 'Sat, Feb 21 . 12:00pm',
+    price: 'from $10.00',
+    publisher: 'Flytime Ent',
+
+  },
+  {
+    id: 'event-4',
+    img: event2,
+    title: 'O2 Arena FREEDOM FEST 2024',
+    date: 'Sat, Feb 21 . 12:00pm',
+    price: 'from $10.00',
     publisher: 'Flytime Ent',
 
   },
@@ -99,71 +126,71 @@ export const event = [
 //   },
 // ];
 
-// export const footerLinks = [
-//   {
-//     title: "Useful Links",
-//     links: [
-//       {
-//         name: "Content",
-//         link: "https://www.hoobank.com/content/",
-//       },
-//       {
-//         name: "How it Works",
-//         link: "https://www.hoobank.com/how-it-works/",
-//       },
-//       {
-//         name: "Create",
-//         link: "https://www.hoobank.com/create/",
-//       },
-//       {
-//         name: "Explore",
-//         link: "https://www.hoobank.com/explore/",
-//       },
-//       {
-//         name: "Terms & Services",
-//         link: "https://www.hoobank.com/terms-and-services/",
-//       },
-//     ],
-//   },
-//   {
-//     title: "Community",
-//     links: [
-//       {
-//         name: "Help Center",
-//         link: "https://www.hoobank.com/help-center/",
-//       },
-//       {
-//         name: "Partners",
-//         link: "https://www.hoobank.com/partners/",
-//       },
-//       {
-//         name: "Suggestions",
-//         link: "https://www.hoobank.com/suggestions/",
-//       },
-//       {
-//         name: "Blog",
-//         link: "https://www.hoobank.com/blog/",
-//       },
-//       {
-//         name: "Newsletters",
-//         link: "https://www.hoobank.com/newsletters/",
-//       },
-//     ],
-//   },
-//   {
-//     title: "Partner",
-//     links: [
-//       {
-//         name: "Our Partner",
-//         link: "https://www.hoobank.com/our-partner/",
-//       },
-//       {
-//         name: "Become a Partner",
-//         link: "https://www.hoobank.com/become-a-partner/",
-//       },
-//     ],
-//   },
-// ];
+export const footerLinks = [
+  {
+    title: "Useful Links",
+    links: [
+      {
+        name: "Content",
+        link: "#",
+      },
+      {
+        name: "How it Works",
+        link: "#",
+      },
+      {
+        name: "Create an event",
+        link: "#",
+      },
+      {
+        name: "Explore Events",
+        link: "#",
+      },
+      {
+        name: "Terms & Services",
+        link: "#",
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      {
+        name: "Help Center",
+        link: "#",
+      },
+      {
+        name: "Partners",
+        link: "#",
+      },
+      {
+        name: "Suggestions",
+        link: "#",
+      },
+      {
+        name: "Blog",
+        link: "#",
+      },
+      {
+        name: "Newsletters",
+        link: "#",
+      },
+    ],
+  },
+  {
+    title: "Partner",
+    links: [
+      {
+        name: "Our Partner",
+        link: "#",
+      },
+      {
+        name: "Become a Partner",
+        link: "#",
+      },
+    ],
+  },
+];
 
 // export const socialMedia = [
 //   {
