@@ -1,4 +1,3 @@
-import styles from "./style";
 import {
   Route,
   createBrowserRouter,
@@ -6,16 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { Navbar } from "./components";
 import Home from "../pages/Home";
-import EventsPage from "../pages/Events";
-// import { navLinks } from './constants';
+import EventDetail from '../pages/EventDetail';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route index element={<Home />} />
-      <Route path="events" element={<EventsPage />} />]
+      {/* <Route path="/eventdetail" element={<EventDetail />} /> */}
+      <Route path='/eventdetail' element={<EventDetail />} />
     </Route>
   )
 );

@@ -1,4 +1,4 @@
-import { event1, event2, people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { eventdetail, eventdetail2, event1, event2, people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -18,6 +18,20 @@ export const navLinks = [
     title: "Sign Up",
   },
 ];
+
+export const eventinfo = [
+  {
+    id: 'info-1',
+    title: "VALENTINE SPECIAL: ALL-WHITE PRIVATE BEACH PARTY",
+    about: 'Get ready to celebrate love in style at our exclusive Valentine Special: All-White Private Beach Party, where you can dance, mingle, and cre',
+    date: 'Saturday, February 17',
+    datentime: 'Saturday, February 17 . 12:00pm',
+    location: 'South Pole, Love Zone Arena, somewhere in lala land',
+    time: '11 hours',
+    organizer: 'Super Eagles',
+  },
+]
+
 
 export const event = [
   {

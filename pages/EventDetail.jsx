@@ -1,7 +1,7 @@
-import { Footer, Hero, Navbar, Events} from "../src/components";
+import { Navbar, Hero, EventDetails } from "../src/components";
 import styles from "../src/style";
 
-const Home = () => {
+const EventDetail = () => {
   return (
     <div className="w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -12,18 +12,17 @@ const Home = () => {
 
       <div className={`${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+          <EventDetails />
         </div>
-      </div>
+      </div> 
 
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      {/* <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Events />
           <Footer />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Home
+export default EventDetail

@@ -26,6 +26,9 @@ import people03 from "./people03.png";
 import slider from "./slider.png";
 import event1 from './event1.jpg';
 import event2 from './event2.jpg';
+import eventdetail from './eventdetail.jpg';
+import eventdetail2 from './eventdetail2.jpg';
+
 export {
   airbnb,
   bill,
@@ -55,4 +58,6 @@ export {
   slider,
   event1,
   event2,
+  eventdetail,
+  eventdetail2,
 };
