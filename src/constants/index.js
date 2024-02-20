@@ -19,6 +19,18 @@ export const navLinks = [
   },
 ];
 
+export const images = [
+  {
+    id:'1',
+    img: eventdetail,
+  }
+  // {
+  //   id:'2',
+  //   img2: eventdetail2,
+  // }
+
+];
+
 export const eventinfo = [
   {
     id: 'info-1',

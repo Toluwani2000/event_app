@@ -1,55 +1,28 @@
-import React, {useState} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from '../style';
+// Carousel.js
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+// import { images } from '../constants';
 
-const carousel = () => {
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>   
-}
+const Carousel = ({ images }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-export default carousel
+  return (
+    <Slider {...settings}>
+      {images.map((image, index) => (
+        <div key={index}>
+          <img src={image} alt={`slide-${index}`} />
+        </div>
+      ))}
+    </Slider>
+  );
+};
 
-// // src/components/Carousel.jsx
-// import React, { useState } from 'react';
-// import styles from '../style'; // Import the CSS file for styling
-
-// const Carousel = ({ slides }) => {
-//   const [activeIndex, setActiveIndex] = useState(0);
-
-//   const goToPrevSlide = () => {
-//     setActiveIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
-//   };
-
-//   const goToNextSlide = () => {
-//     setActiveIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-//   };
-
-//   return (
-//     <div className="carousel">
-//       <button onClick={goToPrevSlide}>&lt;</button>
-//       <div className="slide-container">
-//         {slides.map((slide, index) => (
-//           <div
-//             key={index}
-//             className={`slide ${index === activeIndex ? 'active' : ''}`}
-//           >
-//             {slide}
-//           </div>
-//         ))}
-//       </div>
-//       <button onClick={goToNextSlide}>&gt;</button>
-//     </div>
-//   );
-// };
-
-// export default Carousel;
+export default Carousel;
