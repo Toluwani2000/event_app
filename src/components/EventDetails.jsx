@@ -20,7 +20,6 @@ const EventDetails = () => (
     <Footer />
     </section>
     
-    /Users/dclr/Documents/react_apps/event_booking_app/event_app_router/event_app-main/pages/Home.jsx
 )
 
 
