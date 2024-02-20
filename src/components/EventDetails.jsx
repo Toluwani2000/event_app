@@ -1,15 +1,10 @@
 import styles, { layout } from "../style"
-import { eventdetail }  from '../assets'
-import { EventInfo, Checkout, Events, Footer } from './'
+import { EventInfo, Checkout, Events } from './'
 
 
 const EventDetails = () => (
 
-    <section id='home' className={`flex flex-1 flex-col mx-10`}>
-      <div className={`flex-1 flex ${styles.flexCenter} relative h-[200px]`}>
-        <img src={eventdetail} alt="billing" className='w-[100%] h-[100%] relative z-[5]'/>
-        {/* <Carousel image={images}/> */}
-      </div>
+    <section id='home' className={`flex flex-1 flex-col`}>
       <div className={`${layout.section}`}>
         <EventInfo /> 
         <Checkout />       
@@ -17,7 +12,6 @@ const EventDetails = () => (
       <div className={`${styles.paddingY} ${styles.flexCenter}`}>
         <Events />
       </div>
-    <Footer />
     </section>
     
 )
